@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="518.0" prefWidth="688.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OrderFormController">
+   <children>
+      <ImageView fitHeight="518.0" fitWidth="688.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/images/gin-labeling-design-mockup_23-2149165605.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tblOrder" layoutX="12.0" layoutY="109.0" opacity="0.86" prefHeight="395.0" prefWidth="665.0">
+        <columns>
+          <TableColumn fx:id="OrderIdCol" prefWidth="140.0" text="OrderId" />
+            <TableColumn fx:id="CIdCol" prefWidth="162.0" text="CustomerId" />
+          <TableColumn fx:id="OrderDateCol" prefWidth="207.0" text="OrderDate" />
+            <TableColumn fx:id="OrderTimeCol" prefWidth="154.0" text="Order Time" />
+        </columns>
+      </TableView>
+      <TextField fx:id="SearchCusIdtxt" layoutX="12.0" layoutY="61.0" onAction="#search" promptText="Search CustomerId" />
+   </children>
+</AnchorPane>

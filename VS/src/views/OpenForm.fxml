@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="openAnp" prefHeight="271.0" prefWidth="462.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OpenFormController">
+   <children>
+      <JFXProgressBar fx:id="progressBar" layoutX="14.0" layoutY="238.0" prefHeight="6.0" prefWidth="438.0" secondaryProgress="6.0" />
+      <ImageView fitHeight="215.0" fitWidth="438.0" layoutX="13.0" layoutY="10.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/images/shop.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

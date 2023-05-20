@@ -1,0 +1,13 @@
+.AnchorePane{
+    -fx-background-color:  #ffffff;
+}
+
+.PanchorePane{
+    -fx-background-color: #ffffff ;
+    -fx-border-color: #535c68 ;
+    -fx-border-width:  3;
+}
+
+.textField{
+    -fx-background-color:#ffffff;
+}

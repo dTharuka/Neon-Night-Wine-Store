@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="534.0" prefWidth="923.0" style="-fx-background-color: #ffffff;" stylesheets="@../assets/styles/1St.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AllDetailsFormController">
+   <children>
+      <TableView fx:id="CustomerDetailsContext" layoutX="11.0" layoutY="182.0" prefHeight="345.0" prefWidth="903.0">
+        <columns>
+          <TableColumn fx:id="CusIdCol" prefWidth="104.0" text="Id" />
+          <TableColumn fx:id="CusTitleCol" prefWidth="60.0" text="Title" />
+            <TableColumn fx:id="CusNameCol" prefWidth="179.0" text="Name" />
+            <TableColumn fx:id="CusAddressCol" prefWidth="149.0" text="Address" />
+            <TableColumn fx:id="CusCityCol" prefWidth="134.0" text="City" />
+            <TableColumn fx:id="DateCol" prefWidth="155.0" text="Date" />
+            <TableColumn fx:id="TimeCol" prefWidth="120.0" text="Time" />
+        </columns>
+      </TableView>
+      <TextField fx:id="SerchCustomerIdtxt" layoutX="105.0" layoutY="63.0" onAction="#save" promptText="CusId" />
+      <TextField fx:id="Titletxt" layoutX="305.0" layoutY="63.0" prefHeight="31.0" prefWidth="52.0" promptText="Title" />
+      <TextField fx:id="Addresstxt" layoutX="565.0" layoutY="63.0" prefHeight="31.0" prefWidth="253.0" promptText="Address" />
+      <TextField fx:id="Nametxt" layoutX="366.0" layoutY="63.0" promptText="Name" />
+      <TextField fx:id="Timetxt" layoutX="631.0" layoutY="131.0" promptText="Time" />
+      <TextField fx:id="Datetxt" layoutX="384.0" layoutY="131.0" prefHeight="31.0" prefWidth="218.0" promptText="Date" />
+      <TextField fx:id="Citytxt" layoutX="105.0" layoutY="131.0" prefHeight="31.0" prefWidth="269.0" promptText="City" />
+      <Text layoutX="341.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Details">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Text>
+      <Separator layoutX="347.0" layoutY="46.0" prefHeight="3.0" prefWidth="231.0" style="-fx-background-color: #000000;" />
+   </children>
+</AnchorPane>

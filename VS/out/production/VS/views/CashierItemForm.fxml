@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="518.0" prefWidth="688.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CashierItemFormController">
+   <children>
+      <ImageView fitHeight="518.0" fitWidth="688.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/images/gin-labeling-design-mockup_23-2149165605.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="ItemAddTbl" layoutX="15.0" layoutY="100.0" opacity="0.79" prefHeight="398.0" prefWidth="659.0">
+         <columns>
+            <TableColumn fx:id="ItemCode" prefWidth="128.0" text="ItemCode" />
+            <TableColumn fx:id="Description" prefWidth="181.0" text="Description" />
+            <TableColumn fx:id="PackSize" prefWidth="138.0" text="PackSize" />
+            <TableColumn fx:id="QtyOnHand" prefWidth="171.0" text="UnitPrice" />
+            <TableColumn fx:id="UnitPrice" prefWidth="118.0" text="QtyOnHand" />
+            <TableColumn fx:id="DateCol" prefWidth="151.0" text="Date" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <TextField fx:id="ItemCodetxt" layoutX="14.0" layoutY="55.0" onAction="#ItemCodeOnAction" promptText="Item Code" />
+      <Label fx:id="lblDate" layoutX="519.0" layoutY="24.0" prefHeight="31.0" prefWidth="145.0" />
+   </children>
+</AnchorPane>

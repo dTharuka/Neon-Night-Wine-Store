@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="518.0" prefWidth="688.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerFormController">
+   <children>
+      <ImageView fitHeight="518.0" fitWidth="688.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/images/gin-labeling-design-mockup_23-2149165605.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="customerDetailsTbl" layoutX="10.0" layoutY="207.0" opacity="0.89" prefHeight="302.0" prefWidth="669.0">
+        <columns>
+          <TableColumn fx:id="CId" prefWidth="65.0" text="CId" />
+          <TableColumn fx:id="Title" prefWidth="49.0" text="Title" />
+            <TableColumn fx:id="Name" prefWidth="117.0" text="Name" />
+            <TableColumn fx:id="Address" prefWidth="130.0" text="Address" />
+            <TableColumn fx:id="City" prefWidth="138.0" text="City" />
+            <TableColumn fx:id="Province" prefWidth="73.0" text="Province" />
+            <TableColumn fx:id="PostalCode" prefWidth="96.0" text="PostalCode" />
+        </columns>
+      </TableView>
+      <Button fx:id="CustomerSaveButton" layoutX="378.0" layoutY="166.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="88.0" style="-fx-background-color: #7bed9f;" text="Save" />
+      <Button layoutX="477.0" layoutY="166.0" mnemonicParsing="false" onAction="#updateBtnOnAction" prefHeight="31.0" prefWidth="88.0" style="-fx-background-color: #eccc68;" text="Update" />
+      <Button layoutX="576.0" layoutY="166.0" mnemonicParsing="false" onAction="#deleteBtnOnAction" prefHeight="31.0" prefWidth="88.0" style="-fx-background-color: #ff3838;" text="Delete" />
+      <TextField fx:id="CIdtxt" layoutX="27.0" layoutY="64.0" onAction="#save" onKeyReleased="#textFields_Key_Released_Customer" promptText="CId" />
+      <TextField fx:id="Addresstxt" layoutX="477.0" layoutY="64.0" onKeyReleased="#textFields_Key_Released_Customer" promptText="Address" />
+      <TextField fx:id="CNametxt" layoutX="279.0" layoutY="64.0" onKeyReleased="#textFields_Key_Released_Customer" promptText="CustomerName" />
+      <TextField fx:id="Citytxt" layoutX="27.0" layoutY="126.0" onKeyReleased="#textFields_Key_Released_Customer" prefHeight="31.0" prefWidth="237.0" promptText="City" />
+      <TextField fx:id="PostalCodetxt" layoutX="477.0" layoutY="126.0" onKeyReleased="#textFields_Key_Released_Customer" promptText="PostalCode" />
+      <TextField fx:id="Titletxt" layoutX="223.0" layoutY="64.0" onKeyReleased="#textFields_Key_Released_Customer" prefHeight="31.0" prefWidth="51.0" promptText="Title" />
+      <TextField fx:id="Provincetxt" layoutX="279.0" layoutY="126.0" onKeyReleased="#textFields_Key_Released_Customer" promptText="Province" />
+      <Label fx:id="Datelbl" layoutX="27.0" layoutY="171.0" prefHeight="31.0" prefWidth="88.0" />
+      <Label fx:id="Timelbl" layoutX="135.0" layoutY="172.0" prefHeight="31.0" prefWidth="125.0" />
+   </children>
+</AnchorPane>

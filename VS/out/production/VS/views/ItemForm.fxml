@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="534.0" prefWidth="923.0" style="-fx-background-color: #ffffff;" stylesheets="@../assets/styles/1St.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ItemFormController">
+   <children>
+      <ImageView fitHeight="534.0" fitWidth="923.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true" />
+      <TableView fx:id="ItemAddTbl" layoutX="22.0" layoutY="207.0" prefHeight="314.0" prefWidth="880.0">
+        <columns>
+          <TableColumn fx:id="ItemCode" prefWidth="128.0" text="ItemCode" />
+          <TableColumn fx:id="Description" prefWidth="181.0" text="Description" />
+            <TableColumn fx:id="PackSize" prefWidth="138.0" text="PackSize" />
+            <TableColumn fx:id="QtyOnHand" prefWidth="171.0" text="UnitPrice" />
+            <TableColumn fx:id="UnitPrice" prefWidth="141.0" text="QtyOnHand" />
+            <TableColumn fx:id="DateCol" prefWidth="120.0" text="Date" />
+        </columns>
+      </TableView>
+      <TextField fx:id="ItemCodetxt" layoutX="35.0" layoutY="80.0" onAction="#save" onKeyReleased="#textFields_Key_Released_Item" promptText="Item Code" />
+      <TextField fx:id="Descriptiontxt" layoutX="282.0" layoutY="80.0" onKeyReleased="#textFields_Key_Released_Item" promptText="Discription" />
+      <TextField fx:id="PackPricetxt" layoutX="529.0" layoutY="80.0" onKeyReleased="#textFields_Key_Released_Item" promptText="Pack Size" />
+      <TextField fx:id="UnitPricetxt" layoutX="282.0" layoutY="126.0" onKeyReleased="#textFields_Key_Released_Item" promptText="QtyOnHand" />
+      <TextField fx:id="QtyOnHandtxt" layoutX="35.0" layoutY="126.0" onKeyReleased="#textFields_Key_Released_Item" promptText="UnitPrice" />
+      <Button layoutX="762.0" layoutY="111.0" mnemonicParsing="false" onAction="#itemUpdateBtnOnAction" prefHeight="31.0" prefWidth="108.0" style="-fx-background-color: #eccc68;" text="Update" />
+      <Button layoutX="762.0" layoutY="157.0" mnemonicParsing="false" onAction="#itemDeleteOnBtnAction" prefHeight="31.0" prefWidth="108.0" style="-fx-background-color: #ff3838;" text="Delete" />
+      <Button fx:id="itemSaveBtnOnAction" layoutX="762.0" layoutY="65.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="108.0" style="-fx-background-color: #7bed9f;" text="Save" textFill="#010f17" />
+      <TextField fx:id="Datetxt" layoutX="529.0" layoutY="126.0" onKeyReleased="#textFields_Key_Released_Item" promptText="AddDate" />
+      <Label fx:id="lblDate" layoutX="743.0" layoutY="14.0" prefHeight="31.0" prefWidth="145.0" />
+      <Text layoutX="365.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Items">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Text>
+      <Separator layoutX="362.0" layoutY="47.0" prefHeight="3.0" prefWidth="155.0" style="-fx-background-color: #000000;" />
+   </children>
+</AnchorPane>

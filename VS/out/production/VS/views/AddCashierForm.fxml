@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="534.0" prefWidth="923.0" style="-fx-background-color: #ffffff;" stylesheets="@../assets/styles/1St.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddCashierFormController">
+   <children>
+      <TableView fx:id="CashierTable" layoutX="20.0" layoutY="229.0" opacity="0.82" prefHeight="287.0" prefWidth="889.0">
+        <columns>
+          <TableColumn fx:id="CashierIdCol" prefWidth="75.0" text="CashierId" />
+          <TableColumn fx:id="CashierNameCol" prefWidth="148.0" text="CashiName" />
+            <TableColumn fx:id="CashierNICCol" prefWidth="149.0" text="NIC" />
+            <TableColumn fx:id="CashierContactCol" prefWidth="180.0" text="Contact" />
+            <TableColumn fx:id="CashierSalaryCol" prefWidth="174.0" text="Salary" />
+            <TableColumn fx:id="CashierPasswordCol" prefWidth="162.0" text="Password" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnSaveItem" layoutX="751.0" layoutY="106.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="133.0" style="-fx-background-color: #7bed9f;" text="Save" />
+      <Button layoutX="751.0" layoutY="147.0" mnemonicParsing="false" onAction="#updateBtnOnAction" prefHeight="31.0" prefWidth="133.0" style="-fx-background-color: #eccc68;" text="Update" />
+      <Button layoutX="751.0" layoutY="188.0" mnemonicParsing="false" onAction="#deleteBtnOnAction" prefHeight="31.0" prefWidth="133.0" style="-fx-background-color: #ff3838;" text="Delete" />
+      <TextField fx:id="idTxt" layoutX="14.0" layoutY="91.0" onAction="#save" onKeyReleased="#textFields_Key_Released" promptText="CashierId" />
+      <TextField fx:id="ContactTxt" layoutX="20.0" layoutY="178.0" onKeyReleased="#textFields_Key_Released" promptText="Contact" />
+      <TextField fx:id="NameTxt" layoutX="239.0" layoutY="91.0" onKeyReleased="#textFields_Key_Released" promptText="Name" />
+      <TextField fx:id="NicTxt" layoutX="462.0" layoutY="91.0" onKeyReleased="#textFields_Key_Released" promptText="NIC" />
+      <TextField fx:id="SalaryTxt" layoutX="239.0" layoutY="178.0" onKeyReleased="#textFields_Key_Released" promptText="Salary" />
+      <TextField fx:id="PwdTxt" layoutX="462.0" layoutY="178.0" onKeyReleased="#textFields_Key_Released" promptText="Password" />
+   </children>
+</AnchorPane>
